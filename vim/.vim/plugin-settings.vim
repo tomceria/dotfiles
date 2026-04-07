@@ -190,6 +190,8 @@
   "let g:airline_theme = 'powerlineish'
   "let g:airline_theme = 'one'
   let g:airline_theme = 'catppuccin_mocha'
+  let g:airline_section_error = ''
+  let g:airline_section_warning = ''
 
   "let g:airline_section_z = '%3p%% %#__accent_bold#%4l%#__restore__#/%L%#__restore__# :%#__accent_bold#%3v '
   let g:airline_section_z = '%L%{g:airline_symbols.maxlinenr} %#__accent_bold#%{g:airline_right_alt_sep} %3l%#__restore__#:%2v'
@@ -197,6 +199,16 @@
   let g:airline#extensions#branch#enabled = 1
   let g:airline#extensions#tabline#enabled = 1
   let g:airline#extensions#tabline#fnamemod = ':t'
+  let g:airline#extensions#tabline#buffers_label = ''
+
+  let g:airline_left_sep = "\ue0b4"
+  let g:airline_left_alt_sep = "\ue0b5"
+  let g:airline_right_sep = "\ue0b6"
+  let g:airline_right_alt_sep = "\ue0b7"
+  let g:airline#extensions#tabline#left_sep = "\ue0b4"
+  let g:airline#extensions#tabline#left_alt_sep = "\ue0b5"
+  let g:airline#extensions#tabline#right_sep = "\ue0b6"
+  let g:airline#extensions#tabline#right_alt_sep = "\ue0b7"
 
 " fzf CONFIGS
   " Reverse the layout to make the FZF list top-down
