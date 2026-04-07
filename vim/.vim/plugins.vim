@@ -46,7 +46,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'dhruvasagar/vim-zoom'
 
 " colors
-Plug 'arcticicestudio/nord-vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 " Plug 'dracula/vim'
 " Plug 'rakr/vim-one'
 " Plug 'joshdick/onedark.vim'

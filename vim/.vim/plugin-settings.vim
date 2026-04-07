@@ -1,5 +1,5 @@
 " colors
-  colorscheme nord
+  colorscheme catppuccin_mocha
   if exists('+termguicolors')
     let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
     let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
@@ -189,7 +189,7 @@
   "endif
   "let g:airline_theme = 'powerlineish'
   "let g:airline_theme = 'one'
-  let g:airline_theme = 'nord'
+  let g:airline_theme = 'catppuccin_mocha'
 
   "let g:airline_section_z = '%3p%% %#__accent_bold#%4l%#__restore__#/%L%#__restore__# :%#__accent_bold#%3v '
   let g:airline_section_z = '%L%{g:airline_symbols.maxlinenr} %#__accent_bold#%{g:airline_right_alt_sep} %3l%#__restore__#:%2v'
