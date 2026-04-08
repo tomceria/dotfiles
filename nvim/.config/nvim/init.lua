@@ -47,12 +47,9 @@ require("lazy").setup({
 vim.api.nvim_create_autocmd("VimEnter", {
   once = true,
   callback = function()
-    local cache = vim.g.base46_cache
-    if not vim.uv.fs_stat(cache) then
-      require("base46").compile()
-    end
-    -- Always load highlights so theme applies on every startup
-    for _, file in ipairs(vim.fn.glob(cache .. "*", false, true)) do
+    -- Always recompile so hl_override/hl_add changes apply without manual cache clearing
+    require("base46").compile()
+    for _, file in ipairs(vim.fn.glob(vim.g.base46_cache .. "*", false, true)) do
       dofile(file)
     end
   end,

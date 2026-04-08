@@ -3,9 +3,12 @@ local M = {}
 
 M.base46 = {
   theme = "catppuccin",
-  transparency = false,
+  transparency = true,
   hl_override = {
-    Folded = { bg = "#313244", fg = "#a6adc8" },
+    CursorLine = { bg = "#313244" },
+    Folded  = { bg = "#313244", fg = "#a6adc8" },
+    Visual  = { bg = "#45475a" },
+    TabLineFill = { bg = "#1e1e2e" },
   },
 }
 
@@ -17,6 +20,7 @@ M.ui = {
   tabufline = {
     enabled = true,
     lazyload = true,
+    order = { "treeOffset", "buffers", "tabs" },
   },
 }
 
